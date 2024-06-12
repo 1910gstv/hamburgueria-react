@@ -29,7 +29,7 @@ export const Orders = () => {
 
     // Recuperando pedidos no Back-end
     async function fetchOrders() {
-      const {data: showOrder} = await axios.get('http://localhost:3001/firstOrder')
+      const {data: showOrder} = await axios.get('https://api-codeburger-ts.vercel.app/getAllCategories')
 
       setOrders(showOrder)
     }
